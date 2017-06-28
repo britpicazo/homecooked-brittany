@@ -27,4 +27,5 @@ $("#updateInfo").iziModal({
         width: 600,
         autoOpen: false,
         overlayColor: 'rgba(0, 0, 0, 0.6)',
+        headerColor: '#88A0B9'
 });
