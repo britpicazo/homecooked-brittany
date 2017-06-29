@@ -39,25 +39,22 @@ p{
   text-align: justify;
 }
 
-.iziModal .iziModal-header-title , .iziModal-header-subtitle {
-  font-family: Lato;
-  font-weight: 300;
-  text-align: center;
-  font-size: 25px;
-}
-
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
     font-size: 4em;
     padding-bottom: .4em;
 }    
         
 
 h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
     font-size: 3em;
     padding-bottom: 3%;
 }
+
+/*.row{
+    margin-bottom: 3%;
+}*/
 
 #main_row {
     background-image: url("index_chicken.jpg");
@@ -73,10 +70,21 @@ h2 {
     margin-bottom: .5em;
 }
 
+
+
 #submit_user {
     width: 100%;
 }
 
 #step1, #step2, #step3 {
     margin-top: 5em;
+}
+
+.photo{
+    border: 1px solid #444444;
+    height: 7em;
+}
+
+.modal-header{
+    background-color: #99ffff;
 }

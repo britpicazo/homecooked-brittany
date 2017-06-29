@@ -1,10 +1,17 @@
-$("#modal").iziModal({
-    overlayClose: true,
-    width: 600,
-    autoOpen: false,
-    overlayColor: 'rgba(0, 0, 0, 0.6)',
+$("#sign_in").click(function () {
+    $("#sign_in_form").removeClass("hide");
+    $("#sign_in_heading").removeClass("hide");
+    $("#dont_have_acct").removeClass("hide");
+    $("#sign_up_form").addClass("hide");
+    $("#sign_up_heading").addClass("hide");
+    $("#have_an_acct").addClass("hide");
 });
-$(document).on('click', '.trigger', function (event) {
-    event.preventDefault();
-    $('#modal').iziModal('open');
+
+$("#sign_up").click(function () {
+    $("#sign_up_form").removeClass("hide");
+    $("#sign_up_heading").removeClass("hide");
+    $("#have_an_acct").removeClass("hide");
+    $("#sign_in_form").addClass("hide");
+    $("#sign_in_heading").addClass("hide");
+    $("#dont_have_acct").addClass("hide");
 });
