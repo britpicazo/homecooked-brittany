@@ -41,44 +41,67 @@
 
         <div class="row">
             <div class="col-md-4">
-                <img src="" alt="chef_photo">
-                <br>
-                Upload a photo of yourself
-                <br>
-                Describe yourself
+                <img src="" alt="chef_photo" height="100px" width="100px">
+                <br> Upload a photo of yourself
+                <br> Describe yourself
                 <br>
             </div>
 
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-6">
-                        First Name:
+                        <h4>First Name:</h4>
                     </div>
-                    <div class="col-md-6">
-                        Last Name:
+                    <div class="col-md-5">
+                        <h4>Last Name:</h4>
+                    </div>
+                    <div class="col-md-1">
+                        <button data-toggle="modal" data-target="#chef_about"><span class="glyphicon glyphicon-pencil"></span></button>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-6">
-                        Zip Code:
+                        <h4>Zip Code:</h4>
                     </div>
                     <div class="col-md-6">
-                        Price Per Meal:
+                        <h4>Price Per Meal:</h4>
                     </div>
                 </div>
 
                 <div class="row" id="specialties">
-                    <h4><u>Specialties</u><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#specialtiesModal"></span></h4>
+                    <div class="col-md-11">
+                        <h4>
+                            <u>Specialties: </u>
+                        </h4>
+                    </div>
+                    <div class="col-md-1">
+                        <button data-toggle="modal" data-target="#chef_specialties"><span class="glyphicon glyphicon-pencil"></span></button>
+                    </div>
                     <!-- List Specialties Here -->
                 </div>
 
                 <div class="row" id="restrictions">
-                    <h4><u>Dietary Restrictions</u></h4>
-                    <!-- List Restrictions Here -->
+                    <div class="col-md-11">
+                        <h4>
+                            <u>Dietary Restrictions: </u>
+                        </h4>
+                    </div>
+                    <div class="col-md-1">
+                        <button data-toggle="modal" data-target="#chef_restrictions"><span class="glyphicon glyphicon-pencil"></span></button>
+                    </div>
+                    <!-- List Diet. Restric. Here -->
                 </div>
 
-                <div class="row" id="travel">
-                    <h4><u>Travel Radius</u></h4>
+                <div class="row" id="specialties">
+                    <div class="col-md-11">
+                        <h4>
+                            <u>Travel Radius: </u>
+                        </h4>
+                    </div>
+                    <div class="col-md-1">
+                        <button data-toggle="modal" data-target="#chef_radius"><span class="glyphicon glyphicon-pencil"></span></button>
+                    </div>
                     <!-- List Travel Radius Here -->
                 </div>
             </div>
@@ -86,11 +109,12 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-4" id="menu1">
+            <div class="col-xs-4 photo" id="menu1">
             </div>
-            <div class="col-xs-4" id="menu2">
+            <div class="col-xs-4 photo" id="menu2">
             </div>
-            <div class="col-xs-4" id="menu3">
+            <div class="col-xs-4 photo" id="menu3">
+                <button data-toggle="modal" data-target="#chef_radius"><span class="glyphicon glyphicon-pencil"></span></button>
             </div>
         </div>
     </div>
@@ -99,39 +123,39 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Edit Profile Info</h5>
+                    <h3 class="modal-title" id="exampleModalLongTitle">Edit Profile Info</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-						<label for="text">Upload a photo of yourself</label>
-						<input type="text" class="form-control" id="photo">
-					</div>
+                        <label for="text">Upload a photo of yourself</label>
+                        <input type="text" class="form-control" id="photo">
+                    </div>
                     <div class="form-group">
-						<label for="text">Tell us a little about yourself</label>
-						<input type="text" class="form-control" id="biography">
-					</div>
+                        <label for="text">Tell us a little about yourself</label>
+                        <input type="text" class="form-control" id="biography">
+                    </div>
                     <div class="form-group">
-						<label for="text">First Name</label>
-						<input type="text" class="form-control" id="first_name">
-					</div>
+                        <label for="text">First Name</label>
+                        <input type="text" class="form-control" id="first_name">
+                    </div>
 
-					<div class="form-group">
-						<label for="text">Last Name</label>
-						<input type="text" class="form-control" id="last_name">
-					</div>
+                    <div class="form-group">
+                        <label for="text">Last Name</label>
+                        <input type="text" class="form-control" id="last_name">
+                    </div>
 
-					<div class="form-group">
-						<label for="text">Zip Code</label>
-						<input type="text" class="form-control" id="zipcode">
-					</div>
+                    <div class="form-group">
+                        <label for="text">Zip Code</label>
+                        <input type="text" class="form-control" id="zipcode">
+                    </div>
 
-					<div class="form-group">
-						<label for="text">Price Per Meal</label>
-						<input type="text" class="form-control" id="price">
-					</div>
+                    <div class="form-group">
+                        <label for="text">Price Per Meal</label>
+                        <input type="text" class="form-control" id="price">
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
