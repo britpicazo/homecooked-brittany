@@ -89,3 +89,7 @@ h2 {
     background-color: #78af42;
     text-align: center;
 }
+
+.img-circle {
+    border-radius: 40%;
+}
