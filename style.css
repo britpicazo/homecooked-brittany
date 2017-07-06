@@ -41,7 +41,7 @@ p{
 
 h1 {
     font-family: "Pacifico", cursive;
-    font-size: 4em;
+    font-size: 4.5em;
     padding-bottom: .4em;
 }    
         
@@ -52,9 +52,6 @@ h2 {
     padding-bottom: 3%;
 }
 
-/*.row{
-    margin-bottom: 3%;
-}*/
 
 #main_row {
     background-image: url("index_chicken.jpg");
@@ -75,8 +72,9 @@ h2 {
     width: 100%;
 }
 
-#step1, #step2, #step3 {
-    margin-top: 5em;
+#step1_pic, #step2_pic, #step3_pic {
+    border-radius: 50%;
+    border: 1px solid #aaaaaa;
 }
 
 .photo{
@@ -92,4 +90,8 @@ h2 {
 
 .img-circle {
     border-radius: 40%;
+}
+
+.gallery_pic{
+    margin-top: 4%;
 }
